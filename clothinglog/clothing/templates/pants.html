@@ -1,0 +1,12 @@
+<h1>Add Pants/Shorts</h1>
+
+<form action="addpants/" method="post">
+{% csrf_token %}
+Pants/Shorts:<br>
+<input name="pants">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+<p>
+    <a href="/clothing/enter/">Back to Enter Clothing</a>
+</p>

@@ -1,0 +1,18 @@
+<h1>Clothing Log App</h1>
+
+<h2> Shirts/Sweaters </h2>
+
+<h3>Click on the shirts/sweaters below that you want to delete! </h3>
+
+<table border="1">
+{% for x in clothing %}
+  <tr>
+  <td>{{ x }}
+  <td><a href="delete/{{ x.shirts }}">delete</a></td>
+  </tr>
+{% endfor %}
+</table>
+
+<p>
+    <a href="/clothing/delete">Back to Delete Clothing</a>
+</p>

@@ -1,0 +1,16 @@
+<h1>Clothing Log App</h1>
+
+<h2> Shirts/Sweaters </h2>
+
+<h3>Here are the list of shirts that you have </h3>
+<table border='1'>
+    {% for x in clothing %}
+      <tr>
+        <td>{{ x }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+<p>
+    <a href="/clothing/list">Back to Clothing List</a>
+</p>
